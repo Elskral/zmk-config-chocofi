@@ -14,8 +14,9 @@
 #define KC_AE (SEMICOLON)
 #define KC_OE (SINGLE_QUOTE)
 
+/* Custom Defined Behaviors */
 / {
-        behaviors {
+    behaviors {
             hml: home_row_mod_left {
                 compatible = "zmk,behavior-hold-tap";
                 #binding-cells = <2>;
@@ -39,7 +40,10 @@
                 hold-trigger-on-release;
             };
         };
+}
 
+/* Keymap */
+/ {
         keymap {
                 compatible = "zmk,keymap";
                 // 0
