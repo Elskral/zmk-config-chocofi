@@ -19,6 +19,10 @@
 
 /* Custom Defined Behaviors */
 / {
+    chosen {
+        zmk,physical-layout = &foostan_corne_5col_layout;
+    };
+
     behaviors {
             hml: home_row_mod_left {
                 compatible = "zmk,behavior-hold-tap";
@@ -43,10 +47,7 @@
                 hold-trigger-on-release;
             };
         };
-};
-
-/* Keymap */
-/ {
+        
         keymap {
                 compatible = "zmk,keymap";
                 // 0
@@ -66,6 +67,7 @@
                                   &kp TAB    &mo 1     &kp SPACE    &kp RET     &mo 2    &kp BSPC
                         >;
                 };
+
                 // 1
                 lower_layer {
                         display-name = "Lower Layer";
@@ -83,6 +85,7 @@
                                  &none      &none     &none             &none       &none       &none
                         >;
                 };
+
                 // 2
                 raise_layer { 
                         display-name = "Raise Layer";
@@ -100,6 +103,7 @@
                                  &none      &none     &none             &none       &none       &none
                         >;
                 };
+
                 // 3
                 cmd_layer {
                         display-name = "Command Layer";
@@ -117,6 +121,7 @@
                                  &none      &none     &none             &none       &none       &none
                         >;
                 };
+
                 // 4
                 snd_layer {
                         display-name = "Symbol Layer";
