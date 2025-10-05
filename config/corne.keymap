@@ -42,7 +42,7 @@
 
         keymap {
                 compatible = "zmk,keymap";
-
+                // 0
                 default_layer {
                         display-name = "Default Layer";
 // -----------------------------------------------------------------------------------------
@@ -59,22 +59,23 @@
                                &kp TAB    &mo 1     &kp SPACE         &kp RET     &mo 2    &kp BSPC
                         >;
                 };
+                // 1
                 lower_layer {
                         display-name = "Lower Layer";
-
-
-                raise_layer {
-                        display-name = "Raise Layer";
-
                 };
+                // 2
+                raise_layer { 
+                        display-name = "Raise Layer";
+                };
+                // 3
                 cmd_layer {
                         display-name = "Command Layer";
 
                 };
+                // 4
                 snd_layer {
                         display-name = "Symbol Layer";
 
                 };
         };
-    }
 };
