@@ -67,7 +67,8 @@
                 };
                 snd_layer {
                         display-name = "Symbol Layer";
-                        
+
                 };
         };
+    }
 };
