@@ -8,6 +8,12 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+//German Layout Changes
+#define ß (MINUS)
+#define Ü (LEFT_BRACKET)
+#define Ä (SEMICOLON)
+#define Ö (SINGLE_QUOTE)
+
 / {
         behaviors {
             hml: home_row_mod_left {
