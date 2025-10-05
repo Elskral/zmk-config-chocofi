@@ -47,7 +47,7 @@
                 hold-trigger-on-release;
             };
         };
-        
+
         keymap {
                 compatible = "zmk,keymap";
                 // 0
@@ -61,10 +61,10 @@
 // |  F  |  V  |  Ü  |  Ä  |  Ö  |   |  Y  |  Z  |  W  |  K  |  Q  |
 //             | TAB | LWR | SPC |   | ENT | RSE | BSPC|
                         bindings = <
-   &none &kp J        &kp D       &kp U      &kp A     &kp X        &kp P       &kp H    &kp L      &kp M       &kp KC_SS    &none
-   &none &hml LSHFT C &hml CRTL T &hml ALT I &lt 3 E   &hml LGUI O  &hmr RGUI B &lt 3 N  &hmr ALT R &hmr CRTL S &hmr RSHFT G &none
-   &none &kp F        &kp V       &kp KC_UE  &kp KC_AE &kp KC_OE    &kp Y       &kp Z    &kp W      &kp K       &kp Q        &none
-                                  &kp TAB    &mo 1     &kp SPACE    &kp RET     &mo 2    &kp BSPC
+    &kp J        &kp D       &kp U      &kp A     &kp X        &kp P       &kp H    &kp L      &kp M       &kp KC_SS   
+    &hml LSHFT C &hml CRTL T &hml ALT I &lt 3 E   &hml LGUI O  &hmr RGUI B &lt 3 N  &hmr ALT R &hmr CRTL S &hmr RSHFT G
+    &kp F        &kp V       &kp KC_UE  &kp KC_AE &kp KC_OE    &kp Y       &kp Z    &kp W      &kp K       &kp Q       
+                             &kp TAB    &mo 1     &kp SPACE    &kp RET     &mo 2    &kp BSPC
                         >;
                 };
 
@@ -79,10 +79,10 @@
 // |  F  |  V  |  Ü  |  Ä  |  Ö  |   |  Y  |  Z  |  W  |  K  |  Q  |
 //             | TAB | LWR | SPC |   | ENT | RSE | BSPC|
                         bindings = <
-   &none &none       &none       &none      &none     &none             &none       &none       &none      &none     &none &none
-   &none &none       &none       &none      &none     &none             &none       &none       &none      &none     &none &none
-   &none &none       &none       &none      &none     &none             &none       &none       &none      &none     &none &none
-                                 &none      &none     &none             &none       &none       &none
+    &none       &none       &none      &none     &none             &none       &none       &none      &none     &none
+    &none       &none       &none      &none     &none             &none       &none       &none      &none     &none
+    &none       &none       &none      &none     &none             &none       &none       &none      &none     &none
+                            &none      &none     &none             &none       &none       &none
                         >;
                 };
 
@@ -97,10 +97,10 @@
 // |  F  |  V  |  Ü  |  Ä  |  Ö  |   |  Y  |  Z  |  W  |  K  |  Q  |
 //             | TAB | LWR | SPC |   | ENT | RSE | BSPC|
                         bindings = <
-   &none &none       &none       &none      &none     &none             &none       &none       &none      &none     &none &none
-   &none &none       &none       &none      &none     &none             &none       &none       &none      &none     &none &none
-   &none &none       &none       &none      &none     &none             &none       &none       &none      &none     &none &none
-                                 &none      &none     &none             &none       &none       &none
+    &none       &none       &none      &none     &none             &none       &none       &none      &none     &none
+    &none       &none       &none      &none     &none             &none       &none       &none      &none     &none
+    &none       &none       &none      &none     &none             &none       &none       &none      &none     &none
+                            &none      &none     &none             &none       &none       &none
                         >;
                 };
 
@@ -115,10 +115,10 @@
 // |  F  |  V  |  Ü  |  Ä  |  Ö  |   |  Y  |  Z  |  W  |  K  |  Q  |
 //             | TAB | LWR | SPC |   | ENT | RSE | BSPC|
                         bindings = <
-   &none &none       &none       &none      &none     &none             &none       &none       &none      &none     &none &none
-   &none &none       &none       &none      &none     &none             &none       &none       &none      &none     &none &none
-   &none &none       &none       &none      &none     &none             &none       &none       &none      &none     &none &none
-                                 &none      &none     &none             &none       &none       &none
+    &none       &none       &none      &none     &none             &none       &none       &none      &none     &none
+    &none       &none       &none      &none     &none             &none       &none       &none      &none     &none
+    &none       &none       &none      &none     &none             &none       &none       &none      &none     &none
+                            &none      &none     &none             &none       &none       &none
                         >;
                 };
 
@@ -133,10 +133,10 @@
 // |  F  |  V  |  Ü  |  Ä  |  Ö  |   |  Y  |  Z  |  W  |  K  |  Q  |
 //             | TAB | LWR | SPC |   | ENT | RSE | BSPC|
                         bindings = <
-   &none &none       &none       &none      &none     &none             &none       &none       &none      &none     &none &none
-   &none &none       &none       &none      &none     &none             &none       &none       &none      &none     &none &none
-   &none &none       &none       &none      &none     &none             &none       &none       &none      &none     &none &none
-                                 &none      &none     &none             &none       &none       &none
+    &none       &none       &none      &none     &none             &none       &none       &none      &none     &none
+    &none       &none       &none      &none     &none             &none       &none       &none      &none     &none
+    &none       &none       &none      &none     &none             &none       &none       &none      &none     &none
+                            &none      &none     &none             &none       &none       &none
                         >;
                 };
         };
