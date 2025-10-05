@@ -60,26 +60,76 @@
    &none &kp J       &kp D       &kp U      &kp A     &kp X             &kp P       &kp H    &kp L      &kp M       &kp KC_SS   &none
    &none &hml SHFT C &hml CRTL T &hml ALT I &hml 3 E  &hml LGUI O       &hmr LGUI B &hmr 3 N &hmr ALT R &hmr CRTL S &hmr SHFT G &none
    &none &kp F       &kp V       &kp KC_UE  &kp KC_AE &kp KC_OE         &kp Y       &kp Z    &kp W      &kp K       &kp Q       &none
-                               &kp TAB    &mo 1     &kp SPACE         &kp RET     &mo 2    &kp BSPC
+                                 &kp TAB    &mo 1     &kp SPACE         &kp RET     &mo 2    &kp BSPC
                         >;
                 };
                 // 1
                 lower_layer {
                         display-name = "Lower Layer";
+// -----------------------------------------------------------------------------------------
+// | SHFT| CRTL| ALT | CMD | WDS |   | WDS | CMD | ALT | CRTL|RSHFT|
+//
+// |  J  |  D  |  U  |  A  |  X  |   |  P  |  H  |  L  |  M  |  ß  |
+// |  C  |  T  |  I  |  E  |  O  |   |  B  |  N  |  R  |  S  |  G  |
+// |  F  |  V  |  Ü  |  Ä  |  Ö  |   |  Y  |  Z  |  W  |  K  |  Q  |
+//             | TAB | LWR | SPC |   | ENT | RSE | BSPC|
+                        bindings = <
+   &none &none       &none       &none      &none     &none             &none       &none       &none      &none     &none &none
+   &none &none       &none       &none      &none     &none             &none       &none       &none      &none     &none &none
+   &none &none       &none       &none      &none     &none             &none       &none       &none      &none     &none &none
+                                 &none      &none     &none             &none       &none       &none
+                        >;
                 };
                 // 2
                 raise_layer { 
                         display-name = "Raise Layer";
+// -----------------------------------------------------------------------------------------
+// | SHFT| CRTL| ALT | CMD | WDS |   | WDS | CMD | ALT | CRTL|RSHFT|
+//
+// |  J  |  D  |  U  |  A  |  X  |   |  P  |  H  |  L  |  M  |  ß  |
+// |  C  |  T  |  I  |  E  |  O  |   |  B  |  N  |  R  |  S  |  G  |
+// |  F  |  V  |  Ü  |  Ä  |  Ö  |   |  Y  |  Z  |  W  |  K  |  Q  |
+//             | TAB | LWR | SPC |   | ENT | RSE | BSPC|
+                        bindings = <
+   &none &none       &none       &none      &none     &none             &none       &none       &none      &none     &none &none
+   &none &none       &none       &none      &none     &none             &none       &none       &none      &none     &none &none
+   &none &none       &none       &none      &none     &none             &none       &none       &none      &none     &none &none
+                                 &none      &none     &none             &none       &none       &none
+                        >;
                 };
                 // 3
                 cmd_layer {
                         display-name = "Command Layer";
-
+// -----------------------------------------------------------------------------------------
+// | SHFT| CRTL| ALT | CMD | WDS |   | WDS | CMD | ALT | CRTL|RSHFT|
+//
+// |  J  |  D  |  U  |  A  |  X  |   |  P  |  H  |  L  |  M  |  ß  |
+// |  C  |  T  |  I  |  E  |  O  |   |  B  |  N  |  R  |  S  |  G  |
+// |  F  |  V  |  Ü  |  Ä  |  Ö  |   |  Y  |  Z  |  W  |  K  |  Q  |
+//             | TAB | LWR | SPC |   | ENT | RSE | BSPC|
+                        bindings = <
+   &none &none       &none       &none      &none     &none             &none       &none       &none      &none     &none &none
+   &none &none       &none       &none      &none     &none             &none       &none       &none      &none     &none &none
+   &none &none       &none       &none      &none     &none             &none       &none       &none      &none     &none &none
+                                 &none      &none     &none             &none       &none       &none
+                        >;
                 };
                 // 4
                 snd_layer {
                         display-name = "Symbol Layer";
-
+// -----------------------------------------------------------------------------------------
+// | SHFT| CRTL| ALT | CMD | WDS |   | WDS | CMD | ALT | CRTL|RSHFT|
+//
+// |  J  |  D  |  U  |  A  |  X  |   |  P  |  H  |  L  |  M  |  ß  |
+// |  C  |  T  |  I  |  E  |  O  |   |  B  |  N  |  R  |  S  |  G  |
+// |  F  |  V  |  Ü  |  Ä  |  Ö  |   |  Y  |  Z  |  W  |  K  |  Q  |
+//             | TAB | LWR | SPC |   | ENT | RSE | BSPC|
+                        bindings = <
+   &none &none       &none       &none      &none     &none             &none       &none       &none      &none     &none &none
+   &none &none       &none       &none      &none     &none             &none       &none       &none      &none     &none &none
+   &none &none       &none       &none      &none     &none             &none       &none       &none      &none     &none &none
+                                 &none      &none     &none             &none       &none       &none
+                        >;
                 };
         };
 };
