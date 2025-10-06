@@ -14,10 +14,6 @@
 #include "keys_de.h"
 #include <dt-bindings/zmk/behaviors.h>
 
-//German Layout Changes
-
-#define ES_BPAR ()
-
 /* Custom Defined Behaviors */
 
 / {
