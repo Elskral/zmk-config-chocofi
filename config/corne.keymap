@@ -85,7 +85,7 @@
             //             | TAB | LWR | SPC |   | ENT | RSE | BSPC|
 
             bindings = <
-  &kp DE_LT  &kp DE_LPAR  &kp DE_LBRC   &kp DE_LBKT  &kp DE_SLASH      &kp DE_ASTRK  &kp DE_HASH  &kp DE_DQT    &DE_EQUAL     &kp DE_PLUS
+  &kp DE_LT  &kp DE_LPAR  &kp DE_LBRC   &kp DE_LBKT  &kp DE_SLASH      &kp DE_ASTRK  &kp DE_HASH  &kp DE_DQT    &kp DE_EQUAL     &kp DE_PLUS
   &kp DE_N1  &kp DE_N2    &kp DE_N3     &kp DE_N4    &kp DE_N5         &kp DE_N6     &kp DE_N7    &kp DE_N8     &kp DE_N9     &kp DE_N0
   &kp DE_AT  &kp DE_PIPE  &kp DE_PRCNT  &kp DE_DOT   &kp DE_AMPS       &kp DE_TILDE  &kp DE_EXCL  &kp DE_QMARK  &kp DE_COMMA  &kp DE_MINUS
                           &kp TAB       &none        &kp SPACE         &kp RET       &none        &kp BSPC
