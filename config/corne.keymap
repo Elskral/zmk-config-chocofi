@@ -16,10 +16,7 @@
 
 //German Layout Changes
 
-#define KC_SS (MINUS)
-#define KC_UE (LEFT_BRACKET)
-#define KC_AE (SEMICOLON)
-#define KC_OE (SINGLE_QUOTE)
+#define ES_BPAR ()
 
 /* Custom Defined Behaviors */
 
@@ -71,10 +68,10 @@
             //             | TAB | LWR | SPC |   | ENT | RSE | BSPC|
 
             bindings = <
-  &kp J         &kp D         &kp U        &kp A      &kp X          &kp P        &kp H    &kp L        &kp M         &kp KC_SS
-  &hml LSHFT C  &hml LCTRL T  &hml LALT I  &lt 3 E    &hml LGUI O    &hmr RGUI B  &lt 3 N  &hmr RALT R  &hmr RCTRL S  &hmr RSHFT G
-  &kp F         &kp V         &kp KC_UE    &kp KC_AE  &kp KC_OE      &kp Y        &kp Z    &kp W        &kp K         &kp Q
-                              &kp TAB      &mo 1      &kp SPACE      &kp RET      &mo 2    &kp BSPC
+  &kp DE_J         &kp DE_D         &kp DE_U         &kp DE_A         &kp DE_X             &kp DE_P        &kp DE_H    &kp DE_L        &kp DE_M         &kp DE_SZ
+  &hml LSHFT DE_C  &hml LCTRL DE_T  &hml LALT DE_I   &lt 3 DE_E       &hml LGUI DE_O       &hmr RGUI DE_B  &lt 3 DE_N  &hmr RALT DE_R  &hmr RCTRL DE_S  &hmr RSHFT DE_G
+  &kp DE_F         &kp DE_V         &kp DE_U_UMLAUT  &kp DE_A_UMLAUT  &kp DE_O_UMLAUT      &kp DE_Y        &kp DE_Z    &kp DE_W        &kp DE_K         &kp DE_Q
+                                    &kp TAB          &mo 1            &kp SPACE            &kp RET      &mo 2    &kp BSPC
             >;
         };
 
@@ -86,16 +83,16 @@
             // -----------------------------------------------------------------------------------------
             // | SHFT| CRTL| ALT | CMD | WDS |   | WDS | CMD | ALT | CRTL|RSHFT|
             //
-            // |  J  |  D  |  U  |  A  |  X  |   |  P  |  H  |  L  |  M  |  ß  |
-            // |  C  |  T  |  I  |  E  |  O  |   |  B  |  N  |  R  |  S  |  G  |
-            // |  F  |  V  |  Ü  |  Ä  |  Ö  |   |  Y  |  Z  |  W  |  K  |  Q  |
+            // |  <  |  (  |  {  |  [  |  /  |   |  *  |  #  |  "  |  =  |  +  |
+            // |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |
+            // |  @  |  |  |  %  |  .  |  &  |   |  ~  |  !  |  ?  |  ,  |  -  |
             //             | TAB | LWR | SPC |   | ENT | RSE | BSPC|
 
             bindings = <
-  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-                &none  &none  &none    &none  &none  &none
+  &kp DE_LT  &kp DE_LPAR  &kp DE_LBRC   &kp DE_LBKT  &kp DE_SLASH      &kp DE_ASTRK  &kp DE_HASH  &kp DE_DQT    &DE_EQUAL     &kp DE_PLUS
+  &kp DE_N1  &kp DE_N2    &kp DE_N3     &kp DE_N4    &kp DE_N5         &kp DE_N6     &kp DE_N7    &kp DE_N8     &kp DE_N9     &kp DE_N0
+  &kp DE_AT  &kp DE_PIPE  &kp DE_PRCNT  &kp DE_DOT   &kp DE_AMPS       &kp DE_TILDE  &kp DE_EXCL  &kp DE_QMARK  &kp DE_COMMA  &kp DE_MINUS
+                          &kp TAB       &none        &kp SPACE         &kp RET       &none        &kp BSPC
             >;
         };
 
@@ -107,16 +104,16 @@
             // -----------------------------------------------------------------------------------------
             // | SHFT| CRTL| ALT | CMD | WDS |   | WDS | CMD | ALT | CRTL|RSHFT|
             //
-            // |  J  |  D  |  U  |  A  |  X  |   |  P  |  H  |  L  |  M  |  ß  |
-            // |  C  |  T  |  I  |  E  |  O  |   |  B  |  N  |  R  |  S  |  G  |
-            // |  F  |  V  |  Ü  |  Ä  |  Ö  |   |  Y  |  Z  |  W  |  K  |  Q  |
+            // |  >  |  )  |  }  |  ]  |  \  |   |     |     |  '  |  ´  |  `  |
+            // |     |     |     |     |     |   |     |     |     |     |     |
+            // |  ^  |  °  |     |  :  |     |   |     |     |     |  ;  |  _  |
             //             | TAB | LWR | SPC |   | ENT | RSE | BSPC|
 
             bindings = <
-  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-                &none  &none  &none    &none  &none  &none
+  &kp DE_GT     &kp DE_RPAR  &kp DE_RBRC  &kp DE_RBKT   &kp DE_BSLH    &none  &none  &kp DE_SQT  &kp DE_ACUTE  &kp DE_GRAVE
+  &none         &none        &none        &none         &none          &none  &none  &none       &none         &none
+  &kp DE_CARET  &kp DE_DEG   &none        &kp DE_COLON  &none          &none  &none  &none       &kp DE_SEMI   &kp DE_UNDER
+                             &kp TAB      &none         &kp SPACE      &kp RET       &none       &kp BSPC
             >;
         };
 
@@ -128,16 +125,16 @@
             // -----------------------------------------------------------------------------------------
             // | SHFT| CRTL| ALT | CMD | WDS |   | WDS | CMD | ALT | CRTL|RSHFT|
             //
-            // |  J  |  D  |  U  |  A  |  X  |   |  P  |  H  |  L  |  M  |  ß  |
-            // |  C  |  T  |  I  |  E  |  O  |   |  B  |  N  |  R  |  S  |  G  |
-            // |  F  |  V  |  Ü  |  Ä  |  Ö  |   |  Y  |  Z  |  W  |  K  |  Q  |
-            //             | TAB | LWR | SPC |   | ENT | RSE | BSPC|
+            // | ESC |     |     |     |     |   |     |     |POS1 |     | PUp |
+            // | c A | c D | c X | c C | c V |   |     | UP  |     | ENT |     |
+            // |     |     |     |     |     |   |LEFT |DOWN |RIGHT|     |PDown|
+            //             | c Z |     | c Y |   | END |     | DEL |
 
             bindings = <
-  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-                &none  &none  &none    &none  &none  &none
+  &kp ESC  &none  &none  &none  &none    &none    &none  &none    &none  &none
+  &none    &none  &none  &none  &none    &none    &none  &none    &none  &none
+  &none    &none  &none  &none  &none    &none    &none  &none    &none  &none
+                  &none  &none  &none    &kp END  &none  &kp DEL
             >;
         };
 
@@ -149,16 +146,16 @@
             // -----------------------------------------------------------------------------------------
             // | SHFT| CRTL| ALT | CMD | WDS |   | WDS | CMD | ALT | CRTL|RSHFT|
             //
-            // |  J  |  D  |  U  |  A  |  X  |   |  P  |  H  |  L  |  M  |  ß  |
-            // |  C  |  T  |  I  |  E  |  O  |   |  B  |  N  |  R  |  S  |  G  |
-            // |  F  |  V  |  Ü  |  Ä  |  Ö  |   |  Y  |  Z  |  W  |  K  |  Q  |
-            //             | TAB | LWR | SPC |   | ENT | RSE | BSPC|
+            // |     |  ²  |  ³  |     |     |   |     | F1  | F2  | F3  | F4  |
+            // |  €  |  §  |  $  |  µ  |     |   |     | F5  | F6  | F7  | F8  |
+            // |     |     |     |     |     |   |     | F9  | F10 | F11 | F12 |
+            //             |     |     |     |   |     |     |     |
 
             bindings = <
-  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-                &none  &none  &none    &none  &none  &none
+  &none        &kp DE_SQUARE  &kp DE_CUBE  &none      &none    &none  &none  &none  &none  &none
+  &kp DE_EURO  &kp DE_SECT    &none        &kp DE_MU  &none    &none  &none  &none  &none  &none
+  &none        &none          &none        &none      &none    &none  &none  &none  &none  &none
+                              &none        &none      &none    &none  &none  &none
             >;
         };
     };
